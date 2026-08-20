@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Case fictício de auditoria em saúde: fraude e desperdício." />
+  <title>Fraude & Desperdício | Case de Auditoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="fraude-desperdicio.css" />
+  <style>.dv-ranking li span{display:block;margin-top:2px}</style>
+  <style>html.dv-embed,html.dv-embed body{overflow:hidden}</style>
+</head>
+<body>
+  <div class="dv-shell">
+    <aside class="dv-nav" aria-label="Navegação do case">
+      <a class="dv-nav-logo" href="index.html" aria-label="Voltar ao portfólio">MZ</a>
+      <a class="dv-nav-item is-active" href="#visao" aria-label="Visão geral">⌁</a>
+      <a class="dv-nav-item" href="#alertas" aria-label="Alertas">⌕</a>
+      <a class="dv-nav-item" href="#metodologia" aria-label="Metodologia">i</a>
+      <a class="dv-nav-item" href="index.html" aria-label="Portfólio">←</a>
+    </aside>
+    <main class="dv-main">
+      <header class="dv-header">
+        <div class="dv-title"><span class="dv-icon">⌁</span><div><p>Case de portfólio</p><h1>Auditoria de Utilização</h1></div><span class="dv-badge">Cenário simulado</span></div>
+        <div class="dv-header-actions"><span class="dv-period">JAN — JUN 2024</span><a href="index.html">Portfólio ↗</a></div>
+      </header>
+      <section class="dv-content" id="visao">
+        <div class="dv-case-head">
+          <div class="dv-case-mark">AU</div>
+          <div><h2>Cooperativa de Saúde — Campinas</h2><p>Monitoramento de alertas de utilização para apoio à auditoria.</p></div>
+          <div class="dv-disclaimer">Dados inteiramente fictícios.<br />Não representa uma instituição real.</div>
+        </div>
+        <div class="dv-filter-row" aria-label="Filtros do painel">
+          <label>Período <select id="monthFilter"><option value="all">Jan — Jun 2024</option></select></label>
+          <label>Criticidade <select id="riskFilter"><option value="all">Todos os níveis</option><option value="Alto">Alto</option><option value="Médio">Médio</option><option value="Baixo">Baixo</option></select></label>
+          <label>Tipo de alerta <select id="typeFilter"><option value="all">Todos os alertas</option></select></label>
+          <span id="recordCount" class="dv-count"></span>
+        </div>
+        <section class="dv-kpis" id="visao" aria-label="Indicadores principais">
+          <article><span>Eventos analisados</span><strong id="kpiEvents">—</strong><small>no recorte selecionado</small></article>
+          <article><span>Alertas para auditoria</span><strong id="kpiAlerts">—</strong><small id="kpiRate">—</small></article>
+          <article><span>Valor sob revisão</span><strong id="kpiValue">—</strong><small>não representa perda confirmada</small></article>
+          <article><span>Alto risco</span><strong id="kpiHigh">—</strong><small>prioridade de análise</small></article>
+        </section>
+        <section class="dv-grid">
+          <article class="dv-card dv-line-card"><div class="dv-card-head"><div><span>Alertas por período</span><h3>Volume mensal</h3></div><span class="dv-legend"><i></i> Alertas</span></div><div id="trendChart" class="dv-trend" aria-label="Gráfico de alertas por mês"></div></article>
+          <article class="dv-card"><div class="dv-card-head"><div><span>Tipos de alerta</span><h3>Valor sob revisão</h3></div></div><div id="typeChart" class="dv-bars" aria-label="Gráfico de valores por tipo de alerta"></div></article>
+          <article class="dv-card dv-ranking"><div class="dv-card-head"><div><span>Prestadores</span><h3>Maior concentração de alertas</h3></div></div><ol id="providerRanking"></ol></article>
+          <article class="dv-card dv-risk-card"><div class="dv-card-head"><div><span>Prioridade de auditoria</span><h3>Distribuição por criticidade</h3></div></div><div id="riskBreakdown" class="dv-risk-list"></div><p class="dv-note">A criticidade prioriza a análise. Não determina confirmação de irregularidade.</p></article>
+        </section>
+        <section class="dv-table-section" id="alertas"><div class="dv-section-head"><div><span>Fila de auditoria</span><h2>Eventos sinalizados</h2></div><button id="clearFilters">Limpar filtros</button></div><div class="dv-table-wrap"><table><thead><tr><th>Data</th><th>Beneficiário</th><th>Prestador</th><th>Regra de alerta</th><th>Valor</th><th>Risco</th><th>Status</th></tr></thead><tbody id="alertTable"></tbody></table></div></section>
+        <section class="dv-method" id="metodologia"><div><span>Regras do cenário</span><h2>O que o painel demonstra</h2></div><div><p>O painel organiza sinais para triagem e auditoria. Nenhum evento mostrado representa fraude comprovada.</p><ul><li><b>Uso por terceiro:</b> divergência entre utilizador do benefício e titular registrado.</li><li><b>Incompatibilidade de perfil:</b> procedimento incompatível com o sexo informado no cadastro.</li><li><b>Possível desperdício:</b> exame repetido em intervalo inferior ao parâmetro do cenário.</li></ul></div></section>
+      </section>
+    </main>
+    <aside class="dv-sidebar"><div class="dv-side-head"><span>Leitura de risco</span><b>Atualizada</b></div><p class="dv-side-intro">Principais observações do recorte</p><div id="sideInsights" class="dv-insights"></div><div class="dv-side-bottom"><span>Base do case</span><b>300 eventos sintéticos</b><small>50 registros/mês · Jan–Jun 2024</small></div></aside>
+  </div>
+  <script src="fraude-desperdicio.js"></script>
+</body>
+</html>
+

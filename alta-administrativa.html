@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Termômetro de Alta Administrativa | Case de Home Care</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--b:#286be1;--p:#edf4ff;--i:#22303e;--m:#72808d;--l:#e1e8ee;--bg:#f5f7f8;--g:#238a5b;--y:#bf8914;--r:#cf5656;--f:Manrope,Arial,sans-serif;--mono:'DM Mono',monospace}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--i);font:13px var(--f)}.shell{display:grid;grid-template-columns:64px minmax(0,1fr) 250px;min-height:100vh}.nav{background:#fff;border-right:1px solid var(--l);display:flex;flex-direction:column;align-items:center;gap:14px;padding:15px 0}.nav a{width:34px;height:34px;display:grid;place-items:center;text-decoration:none;border-radius:9px;color:#91a0ae;font-size:18px}.nav .logo{background:var(--b);color:#fff;font-size:11px;font-weight:800}.nav .active,.nav a:hover{background:var(--p);color:var(--b)}.nav .back{margin-top:auto}.header{height:64px;background:#fff;border-bottom:1px solid var(--l);display:flex;justify-content:space-between;align-items:center;padding:0 28px}.eyebrow,.header-right,.card-head span,.section-head span,.method span{font:9px var(--mono);letter-spacing:.08em;color:var(--m);text-transform:uppercase}.header h1{font-size:15px;margin:3px 0 0;letter-spacing:-.04em}.header-right{display:flex;gap:15px}.header-right a{color:var(--b);text-decoration:none;font-weight:700}.content{max-width:1300px;margin:auto;padding:22px 28px 55px}.patient{background:#fff;border:1px solid var(--l);border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:12px}.avatar{width:42px;height:42px;border-radius:50%;background:var(--b);color:#fff;display:grid;place-items:center;font-weight:800}.patient p,.patient h2{margin:0}.patient p,.patient small{font-size:10px;color:var(--m)}.patient h2{font-size:14px;margin:2px 0}.disclaimer{margin-left:auto;text-align:right;color:var(--m);font-size:9px;line-height:1.5}.filters{display:flex;gap:10px;align-items:center;padding:13px 0}.filters label{font-size:10px;color:var(--m);display:flex;gap:5px;align-items:center}.filters select{border:1px solid var(--l);border-radius:6px;background:#fff;padding:7px 8px;color:var(--i);font:10px var(--f)}.filters>span{margin-left:auto;font:10px var(--mono);color:var(--b)}.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.kpis article,.card,.table-section{background:#fff;border:1px solid var(--l);border-radius:11px}.kpis article{padding:14px}.kpis span{font:9px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--m)}.kpis strong{display:block;font-size:24px;letter-spacing:-.07em;margin:5px 0 2px}.kpis small{font-size:9px;color:var(--m)}.grid{display:grid;grid-template-columns:1.3fr 1fr;gap:10px;margin-top:10px}.card{padding:15px;min-height:205px}.card-head{display:flex;justify-content:space-between;align-items:start}.card-head h3{font-size:13px;margin:4px 0 0}.badge{font-size:9px;border-radius:20px;padding:5px 8px}.scales{margin-top:17px}.scale{display:grid;grid-template-columns:115px 1fr 58px;gap:12px;align-items:center;margin:14px 0;font-size:10px}.track{height:13px;background:#edf1f4;border-radius:12px;padding:2px;display:flex;gap:2px}.track i{flex:1;border-radius:10px;background:#dfe6eb}.track .green{background:var(--g)}.track .yellow{background:#edc03c}.track .red{background:var(--r)}.scale b{font-size:9px;color:var(--m)}.note{font-size:9px;line-height:1.5;color:var(--m);margin:17px 0 0}.team{list-style:none;padding:0;margin:13px 0 0}.team li{border-top:1px solid var(--l);padding:8px 0;display:flex;justify-content:space-between;font-size:10px}.team span{color:var(--m)}.trend{height:135px;border-bottom:1px solid var(--l);display:flex;align-items:end;gap:8px;padding-top:14px}.trend>div{flex:1;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:end;gap:5px}.trend i{width:57%;min-height:4px;border-radius:5px 5px 0 0;background:var(--b)}.trend b{font-size:10px}.trend small{font:8px var(--mono);color:var(--m)}.modes{margin-top:25px}.mode{margin:14px 0}.mode div{display:flex;justify-content:space-between;font-size:10px;margin-bottom:5px}.mode-track{height:9px;border-radius:8px;background:#edf1f4;overflow:hidden}.mode-track i{display:block;height:100%;background:var(--b);border-radius:8px}.mode-track .id{background:#7fa8ef}.table-section{margin-top:10px;padding:15px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.section-head h2{font-size:13px;margin:4px 0 0}.section-head button{border:1px solid var(--l);background:#fff;border-radius:5px;padding:6px 8px;font:10px var(--f);color:var(--b);cursor:pointer}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:720px}th{text-align:left;padding:8px;border-bottom:1px solid var(--l);font:9px var(--mono);font-weight:500;color:var(--m)}td{padding:10px 8px;border-bottom:1px solid #edf1f4;font-size:10px}.pill{font-size:8px;border-radius:10px;padding:4px 7px;font-weight:700}.pill.green{background:#eaf8f0;color:var(--g)}.pill.yellow{background:#fff7dd;color:#987110}.pill.red{background:#fff0f0;color:var(--r)}.method{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;margin-top:35px;padding-top:27px;border-top:1px solid var(--l)}.method h2{font-size:26px;line-height:1;letter-spacing:-.07em;margin:6px 0}.method em{font-family:Georgia,serif;font-weight:400}.method p{color:var(--m);line-height:1.7;margin:0}.method ul{list-style:none;padding:0;margin:14px 0}.method li{border-top:1px solid var(--l);padding:10px 0;font-size:11px}.side{background:#fff;border-left:1px solid var(--l);padding:19px 15px;display:flex;flex-direction:column}.side-head{font:10px var(--mono);color:var(--b);display:flex;justify-content:space-between}.side-head b{font-size:8px;background:var(--p);padding:4px 6px;border-radius:7px}.side>p{font-size:10px;color:var(--m);margin:18px 0 8px}.insight{border-bottom:1px solid var(--l);padding:0 0 11px;margin-bottom:11px}.insight strong{display:block;font-size:16px;letter-spacing:-.06em}.insight span{font-size:9px;line-height:1.4;color:var(--m);display:block;margin-top:2px}.side-bottom{margin-top:auto;padding-top:15px;border-top:1px solid var(--l)}.side-bottom span{font:9px var(--mono);color:var(--m);text-transform:uppercase}.side-bottom b{display:block;font-size:11px;margin:5px 0}.side-bottom small{font-size:9px;color:var(--m)}@media(max-width:1050px){.shell{grid-template-columns:64px 1fr}.side{display:none}}@media(max-width:680px){.shell{display:block}.nav{height:55px;position:sticky;top:0;z-index:3;flex-direction:row;padding:0 13px;border-bottom:1px solid var(--l);border-right:0}.nav .back{margin:0 0 0 auto}.header{padding:10px 15px;height:auto;min-height:62px}.header-right{display:none}.content{padding:15px}.disclaimer{display:none}.filters{flex-wrap:wrap}.filters>span{width:100%;margin:4px 0}.kpis,.grid,.method{grid-template-columns:1fr}.kpis{gap:7px}.card{min-height:auto}.method{gap:18px}}
+.track i{opacity:.22}.track i.red{background:var(--r)}.track i.yellow{background:#edc03c}.track i.green{background:var(--g)}.track i.on{opacity:1}.patient-icons{display:flex;gap:6px;margin-left:8px}.patient-icons span{width:25px;height:25px;display:grid;place-items:center;border-radius:50%;background:var(--p);font-size:13px}.patient.is-unselected .avatar{background:var(--p);color:var(--b)}
+</style>
+<style>html.ad-embed,html.ad-embed body{overflow:hidden}html.ad-embed .side{display:none!important}html.ad-embed .shell{grid-template-columns:64px minmax(0,1fr)!important}</style>
+<style>
+:root{--b:#65a8ef;--p:#eaf4ff;--i:#393d43;--m:#78818c;--l:#dfe6ed;--bg:#f7f9fc;--g:#a9d1fb;--y:#65a8ef;--r:#393d43}.track i.red{background:#cf5656}.track i.yellow{background:#edc03c}.track i.green{background:#238a5b}.scales .scale:nth-child(1) i.red,.scales .scale:nth-child(1) i.yellow,.scales .scale:nth-child(2) i.red,.scales .scale:nth-child(3) i{opacity:1}.scales .scale:nth-child(1) i.green,.scales .scale:nth-child(2) i.yellow,.scales .scale:nth-child(2) i.green{opacity:.16}.pill.red{background:#fff0f0;color:#b44949}.pill.yellow{background:#fff7dd;color:#987110}.pill.green{background:#eaf8f0;color:#238a5b}.badge{border:1px solid var(--l)}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="nav">
+<a class="logo" href="index.html">MZ</a>
+<a class="active" href="#visao">⊞</a>
+<a href="#pacientes">♙</a>
+<a href="#metodo">i</a>
+<a class="back" href="index.html">←</a>
+</aside>
+<main>
+<header class="header">
+<div>
+<span class="eyebrow">Case de portfólio</span>
+<h1>Termômetro de Alta Administrativa</h1>
+</div>
+<div class="header-right">HOME CARE · CENÁRIO FICTÍCIO <a href="index.html">Portfólio ↗</a>
+</div>
+</header>
+<div class="content">
+<section class="patient">
+<div class="avatar" id="ini">—</div>
+<div>
+<p>Paciente em acompanhamento</p>
+<h2 id="name">—</h2>
+<small id="meta">—</small>
+</div>
+<div class="disclaimer">Base inteiramente sintética.<br>Nenhum paciente ou empresa é real.</div>
+<div class="patient-icons" aria-label="Equipe multidisciplinar"><span>🩺</span><span>🧠</span><span>🍎</span><span>🦿</span><span>🗣️</span></div>
+</section>
+<section class="filters">
+<label>Paciente <select id="patient">
+</select>
+</label>
+<label>Modalidade <select id="mode">
+<option value="all">AD e ID</option>
+<option value="AD">Atendimento Domiciliar (AD)</option>
+<option value="ID">Internação Domiciliar (ID)</option>
+</select>
+</label>
+<label>Período <select id="month">
+<option value="all">Jan — Jun 2024</option>
+</select>
+</label>
+<span id="count">
+</span>
+</section>
+<section class="kpis" id="visao">
+<article>
+<span>Pacientes ativos</span>
+<strong id="active">—</strong>
+<small>no recorte selecionado</small>
+</article>
+<article>
+<span>Elegíveis para alta</span>
+<strong id="eligible">—</strong>
+<small id="rate">—</small>
+</article>
+<article>
+<span>Em transição para AD</span>
+<strong id="transition">—</strong>
+<small>critério clínico atendido</small>
+</article>
+<article>
+<span>Dias assistenciais</span>
+<strong id="days">—</strong>
+<small>média no recorte</small>
+</article>
+</section>
+<section class="grid">
+<article class="card">
+<div class="card-head">
+<div>
+<span>Evolução do paciente</span>
+<h3>Critérios assistenciais</h3>
+</div>
+<b class="badge" id="status">—</b>
+</div>
+<div class="scales" id="scales">
+</div>
+<p class="note">As três faixas representam progressão assistencial: fase inicial, evolução e elegibilidade. A classificação não substitui decisão clínica.</p>
+</article>
+<article class="card">
+<div class="card-head">
+<div>
+<span>Equipe multidisciplinar</span>
+<h3>Última avaliação</h3>
+</div>
+</div>
+<ul class="team" id="team">
+</ul>
+</article>
+</section>
+<section class="grid">
+<article class="card">
+<div class="card-head">
+<div>
+<span>Base assistencial</span>
+<h3>Elegibilidade por mês</h3>
+</div>
+<small>Pacientes elegíveis</small>
+</div>
+<div class="trend" id="trend">
+</div>
+</article>
+<article class="card">
+<div class="card-head">
+<div>
+<span>Gestão da carteira</span>
+<h3>Modalidade de atendimento</h3>
+</div>
+</div>
+<div class="modes" id="modes">
+</div>
+<p class="note">A transição de ID para AD é considerada somente quando há estabilidade e segurança assistencial.</p>
+</article>
+</section>
+<section class="table-section" id="pacientes">
+<div class="section-head">
+<div>
+<span>Fila de gestão</span>
+<h2>Pacientes e encaminhamento</h2>
+</div>
+<button id="clear">Limpar filtros</button>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Paciente</th>
+<th>Modalidade</th>
+<th>Locomoção</th>
+<th>Padrão ventilatório</th>
+<th>Estado geral</th>
+<th>Situação</th>
+<th>Encaminhamento</th>
+</tr>
+</thead>
+<tbody id="table">
+</tbody>
+</table>
+</div>
+</section>
+<section class="method" id="metodo">
+<div>
+<span>Regras do cenário</span>
+<h2>Alta com<br>
+<em>critério.</em>
+</h2>
+</div>
+<div>
+<p>Este case organiza a evolução da equipe multidisciplinar para apoiar a gestão da carteira. A finalidade é reduzir permanências sem indicação e identificar pacientes que podem seguir com cuidado domiciliar seguro.</p>
+<ul>
+<li>
+<b>Locomoção</b> · de restrito ao leito a deambulando com segurança.</li>
+<li>
+<b>Padrão ventilatório</b> · de bradipneico/dispneico a eupneico.</li>
+<li>
+<b>Estado geral</b> · consolida autonomia, alimentação e condição clínica registrada.</li>
+</ul>
+</div>
+</section>
+</div>
+</main>
+<aside class="side">
+<div class="side-head">LEITURA DA CARTEIRA <b>ATUALIZADA</b>
+</div>
+<p>Principais observações do recorte</p>
+<div id="insights">
+</div>
+<div class="side-bottom">
+<span>Instituição do case</span>
+<b>Horizonte Assistência Domiciliar</b>
+<small>Empresa fictícia de Home Care</small>
+</div>
+</aside>
+</div>
+<script>
+(()=>{const ms=['2024-01','2024-02','2024-03','2024-04','2024-05','2024-06'],lb={"2024-01":"Jan","2024-02":"Fev","2024-03":"Mar","2024-04":"Abr","2024-05":"Mai","2024-06":"Jun"},ns=['Ana Beatriz','Bruno Cardoso','Carla Mendes','Diego Nunes','Elisa Ramos','Felipe Costa','Gabriela Lima','Henrique Alves','Isabela Rocha','João Vitor','Larissa Melo','Marcos Silva','Natalia Reis','Otávio Freitas','Paula Azevedo','Rafael Souza','Sofia Martins','Tiago Moreira'],team=['Médico','Psicólogo','Nutricionista','Fisioterapeuta','Fonoaudiólogo'],d=ms.flatMap((m,mi)=>ns.map((n,pi)=>{let mode=(pi+mi)%4===0?'ID':'AD',p=Math.min(3,Math.max(0,Math.floor((pi%4+mi)/2))),a=Math.min(3,p+(pi%3?1:0)),b=Math.min(3,p+(pi%5>1?1:0)),c=Math.min(3,p+(pi%4>1?1:0)),score=a+b+c,s=score>=8?'green':score>=5?'yellow':'red';return{m,n,mode,a,b,c,score,s,days:18+((pi*7+mi*4)%62),ok:s==='green',tr:mode==='ID'&&s==='green'}})),q=x=>document.querySelector(x),E={p:q('#patient'),mo:q('#mode'),m:q('#month'),ini:q('#ini'),n:q('#name'),meta:q('#meta'),cnt:q('#count'),act:q('#active'),ok:q('#eligible'),rate:q('#rate'),tr:q('#transition'),days:q('#days'),status:q('#status'),sc:q('#scales'),tm:q('#team'),trend:q('#trend'),modes:q('#modes'),tb:q('#table'),ins:q('#insights')};E.p.innerHTML='<option value="all">Todos os pacientes</option>'+ns.map(x=>`<option>${x}</option>`).join('');E.m.innerHTML='<option value="all">Jan — Jun 2024</option>'+ms.map(x=>`<option value="${x}">${lb[x]} 2024</option>`).join('');function rows(){return d.filter(x=>(E.p.value==='all'||x.n===E.p.value)&&(E.mo.value==='all'||x.mode===E.mo.value)&&(E.m.value==='all'||x.m===E.m.value))}function render(){let r=rows(),z=[...r].sort((x,y)=>y.m.localeCompare(x.m))[0]||d[0],u=[...new Set(r.map(x=>x.n))],ok=r.filter(x=>x.ok),tr=r.filter(x=>x.tr),av=Math.round(r.reduce((s,x)=>s+x.days,0)/Math.max(1,r.length));E.ini.textContent=z.n.split(' ').map(x=>x[0]).slice(0,2).join('');E.n.textContent=z.n;E.meta.textContent=`${z.mode==='AD'?'Atendimento Domiciliar':'Internação Domiciliar'} · última avaliação ${lb[z.m]}/2024`;E.cnt.textContent=`${r.length} avaliações no recorte`;E.act.textContent=u.length;E.ok.textContent=ok.length;E.rate.textContent=`${r.length?((ok.length/r.length)*100).toFixed(1):0}% das avaliações`;E.tr.textContent=tr.length;E.days.textContent=av;E.status.textContent=z.s==='green'?'Verde · elegível':z.s==='yellow'?'Amarelo · monitorar':'Vermelho · prioridade';E.status.className='badge pill '+z.s;let cr=[['Locomoção',z.a,['Restrito','Com auxílio','Deambulando']],['Estado respiratório',z.b,['Instável','Monitorar','Estável']],['Estado geral',z.c,['Fragilizado','Regular','Bom']]];E.sc.innerHTML=cr.map(x=>`<div class="scale">
+<span>${x[0]}</span>
+<div class="track">${[1,2,3].map(n=>`<i class="${n<=x[1]?z.s:''}">
+</i>`).join('')}</div>
+<b>${x[2][Math.max(0,x[1]-1)]}</b>
+</div>`).join('');E.tm.innerHTML=team.map((x,i)=>`<li>
+<span>${x}</span>
+<b>${i===3?'Locomoção '+z.a+'/3':i===0?'Estado geral '+z.c+'/3':i===4?'Deglutição estável':i===2?'Plano alimentar ativo':'Acompanhamento ativo'}</b>
+</li>`).join('');let t=ms.map(m=>({m,c:new Set(r.filter(x=>x.m===m&&x.ok).map(x=>x.n)).size})),mx=Math.max(...t.map(x=>x.c),1);E.trend.innerHTML=t.map(x=>`<div>
+<b>${x.c}</b>
+<i style="height:${x.c/mx*100}%">
+</i>
+<small>${lb[x.m]}</small>
+</div>`).join('');let mo=['AD','ID'].map(m=>({m,c:new Set(r.filter(x=>x.mode===m).map(x=>x.n)).size})),mm=Math.max(...mo.map(x=>x.c),1);E.modes.innerHTML=mo.map(x=>`<div class="mode">
+<div>
+<span>${x.m==='AD'?'Atendimento Domiciliar (AD)':'Internação Domiciliar (ID)'}</span>
+<b>${x.c} pacientes</b>
+</div>
+<div class="mode-track">
+<i class="${x.m==='ID'?'id':''}" style="width:${x.c/mm*100}%">
+</i>
+</div>
+</div>`).join('');let pr=[...new Map(r.map(x=>[x.n,x])).values()].sort((x,y)=>y.score-x.score);E.tb.innerHTML=pr.map(x=>`<tr>
+<td>
+<b>${x.n}</b>
+<br>
+<small>${lb[x.m]}/2024</small>
+</td>
+<td>${x.mode}</td>
+<td>${x.a}/3</td>
+<td>${x.b}/3</td>
+<td>${x.c}/3</td>
+<td>
+<span class="pill ${x.s}">${x.s==='green'?'Verde · elegível':x.s==='yellow'?'Amarelo · monitorar':'Vermelho · prioridade'}</span>
+</td>
+<td>${x.tr?'Avaliar transição ID → AD':x.ok?'Avaliar alta administrativa':'Manter plano assistencial'}</td>
+</tr>`).join('')||`<tr><td colspan="7">Nenhuma avaliação no recorte.</td></tr>`;let id=mo.find(x=>x.m==='ID').c;E.ins.innerHTML=`<div class="insight">
+<strong>${ok.length}</strong>
+<span>avaliações elegíveis para discussão de alta</span>
+</div>
+<div class="insight">
+<strong>${tr.length}</strong>
+<span>situações com potencial de transição de ID para AD</span>
+</div>
+<div class="insight">
+<strong>${id} pacientes ID</strong>
+<span>requerem acompanhamento da estabilidade</span>
+</div>
+<div class="insight">
+<strong>${av} dias</strong>
+<span>média assistencial no recorte</span>
+</div>`}[E.p,E.mo,E.m].forEach(x=>x.addEventListener('change',render));q('#clear').onclick=()=>{E.p.value=E.mo.value=E.m.value='all';render()};render()})();
+</script>
+<script>
+(()=>{const select=document.querySelector('#patient'),box=document.querySelector('.patient'),avatar=document.querySelector('#ini'),name=document.querySelector('#name'),meta=document.querySelector('#meta');function updateHeader(){if(select.value==='all'){box.classList.add('is-unselected');avatar.textContent='☰';name.textContent='Selecione um paciente';meta.textContent='Use o filtro para consultar a evolução individual e a equipe envolvida.'}else{box.classList.remove('is-unselected')}}select.addEventListener('change',updateHeader);updateHeader()})();
+</script>
+<script>
+(()=>{const filters=['#patient','#mode','#month'];function colorRanges(){document.querySelectorAll('#scales .track').forEach(track=>track.querySelectorAll('i').forEach((bar,index)=>{const reached=['red','yellow','green'].some(color=>bar.classList.contains(color));bar.className=`${['red','yellow','green'][index]}${reached?' on':''}`}))}filters.forEach(selector=>document.querySelector(selector).addEventListener('change',colorRanges));document.querySelector('#clear').addEventListener('click',()=>setTimeout(colorRanges));colorRanges()})();
+</script>
+<script>
+(()=>{const M=['2024-01','2024-02','2024-03','2024-04','2024-05','2024-06'],L={"2024-01":"Jan","2024-02":"Fev","2024-03":"Mar","2024-04":"Abr","2024-05":"Mai","2024-06":"Jun"},N=['Ana Beatriz','Bruno Cardoso','Carla Mendes','Diego Nunes','Elisa Ramos','Felipe Costa','Gabriela Lima','Henrique Alves','Isabela Rocha','João Vitor','Larissa Melo','Marcos Silva','Natalia Reis','Otávio Freitas','Paula Azevedo','Rafael Souza','Sofia Martins','Tiago Moreira'],Q=s=>document.querySelector(s),E={p:Q('#patient'),mo:Q('#mode'),m:Q('#month'),ini:Q('#ini'),n:Q('#name'),meta:Q('#meta'),cnt:Q('#count'),act:Q('#active'),ok:Q('#eligible'),rate:Q('#rate'),tr:Q('#transition'),days:Q('#days'),status:Q('#status'),sc:Q('#scales'),tm:Q('#team'),trend:Q('#trend'),modes:Q('#modes'),tb:Q('#table'),ins:Q('#insights')},D=M.flatMap((m,mi)=>N.map((n,pi)=>{let a=Math.min(3,Math.floor((pi%4+mi)/2)+(pi%3?1:0)),b=Math.min(3,Math.floor((pi%4+mi)/2)+(pi%5>1?1:0)),c=Math.min(3,Math.floor((pi%4+mi)/2)+(pi%4>1?1:0)),t=1+((pi+mi*2)%7),score=Math.min(16,a+b+c+t),s=score>=16?'green':score>=12?'yellow':'red',mode=(pi+mi)%4===0?'ID':'AD';return{m,n,a,b,c,t,score,s,mode,days:18+((pi*7+mi*4)%62),ok:s==='green',tr:mode==='ID'&&score>=12}}));function R(){return D.filter(x=>(E.p.value==='all'||x.n===E.p.value)&&(E.mo.value==='all'||x.mode===E.mo.value)&&(E.m.value==='all'||x.m===E.m.value))}function draw(){let r=R(),z=[...r].sort((x,y)=>y.m.localeCompare(x.m))[0]||D[0],u=[...new Set(r.map(x=>x.n))],ok=r.filter(x=>x.ok),tr=r.filter(x=>x.tr),av=Math.round(r.reduce((s,x)=>s+x.days,0)/Math.max(1,r.length)),phase=z.s==='green'?'Elegível para alta':z.s==='yellow'?'Em evolução':'Fase inicial';E.cnt.textContent=`${r.length} avaliações no recorte`;E.act.textContent=u.length;E.ok.textContent=ok.length;E.rate.textContent=`${r.length?((ok.length/r.length)*100).toFixed(1):0}% com 16/16 pontos`;E.tr.textContent=tr.length;E.days.textContent=av;E.status.textContent=`${phase} · ${z.score}/16`;E.status.className='badge pill '+z.s;if(E.p.value==='all'){E.ini.textContent='☰';E.n.textContent='Selecione um paciente';E.meta.textContent='Use o filtro para consultar a evolução individual e a equipe envolvida.'}else{E.ini.textContent=z.n.split(' ').map(x=>x[0]).slice(0,2).join('');E.n.textContent=z.n;E.meta.textContent=`${z.mode==='AD'?'Atendimento Domiciliar':'Internação Domiciliar'} · ${z.score}/16 pontos · ${L[z.m]}/2024`}let C=[['Locomoção',z.a,['Restrito ao leito','Com auxílio','Deambulando']],['Padrão ventilatório',z.b,['Bradipneico/dispneico','Taquipneico','Eupneico']],['Estado geral',z.c,['Mau','Regular','Bom']]],colors=['red','yellow','green'];E.sc.innerHTML=C.map(x=>`<div class="scale"><span>${x[0]}</span><div class="track">${colors.map((c,i)=>`<i class="${c}${i<x[1]?' on':''}"></i>`).join('')}</div><b>${x[2][Math.max(0,x[1]-1)]}</b></div>`).join('');E.tm.innerHTML=[['Médico',`Score TAAD ${z.score}/16`],['Psicólogo',z.score>=12?'Tratamento em progresso':'Acompanhamento ativo'],['Nutricionista',z.t>=5?'Plano estável':'Reavaliar conduta'],['Fisioterapeuta',`Força e locomoção ${z.a}/3`],['Fonoaudiólogo',z.t>=6?'FOIS em fase final':'FOIS em acompanhamento']].map(x=>`<li><span>${x[0]}</span><b>${x[1]}</b></li>`).join('');let T=M.map(m=>({m,c:new Set(r.filter(x=>x.m===m&&x.ok).map(x=>x.n)).size})),mx=Math.max(...T.map(x=>x.c),1);E.trend.innerHTML=T.map(x=>`<div><b>${x.c}</b><i style="height:${x.c/mx*100}%"></i><small>${L[x.m]}</small></div>`).join('');let modes=['AD','ID'].map(m=>({m,c:new Set(r.filter(x=>x.mode===m).map(x=>x.n)).size})),mm=Math.max(...modes.map(x=>x.c),1);E.modes.innerHTML=modes.map(x=>`<div class="mode"><div><span>${x.m==='AD'?'Atendimento Domiciliar (AD)':'Internação Domiciliar (ID)'}</span><b>${x.c} pacientes</b></div><div class="mode-track"><i class="${x.m==='ID'?'id':''}" style="width:${x.c/mm*100}%"></i></div></div>`).join('');let P=[...new Map(r.map(x=>[x.n,x])).values()].sort((a,b)=>b.score-a.score);E.tb.innerHTML=P.map(x=>`<tr><td><b>${x.n}</b><br><small>${L[x.m]}/2024</small></td><td>${x.mode}</td><td>${x.a}/3</td><td>${x.b}/3</td><td>${x.c}/3</td><td><span class="pill ${x.s}">${x.s==='green'?'Elegível · 16/16':x.s==='yellow'?'Em evolução · 12–15':'Fase inicial · 0–11'}</span></td><td>${x.ok?'Iniciar processo de alta':x.tr?'Avaliar transição ID → AD':'Manter plano assistencial'}</td></tr>`).join('')||'<tr><td colspan="7">Nenhuma avaliação no recorte.</td></tr>';E.ins.innerHTML=`<div class="insight"><strong>${ok.length}</strong><span>avaliações com 16/16 pontos e elegíveis para alta</span></div><div class="insight"><strong>${tr.length}</strong><span>casos ID em evolução para possível transição a AD</span></div><div class="insight"><strong>${av} dias</strong><span>média assistencial no recorte</span></div><div class="insight"><strong>0–11 · 12–15 · 16</strong><span>fases inicial, evolução e elegibilidade</span></div>`}[E.p,E.mo,E.m].forEach(x=>x.addEventListener('change',draw));Q('#clear').addEventListener('click',()=>setTimeout(draw));draw()})();
+</script>
+<script>if(window.self!==window.top){document.documentElement.classList.add('ad-embed')}</script>
+</body>
+</html>
+

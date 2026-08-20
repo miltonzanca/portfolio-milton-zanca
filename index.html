@@ -9,6 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .fraud-preview{height:235px;margin:20px 0 26px;overflow:hidden;border-radius:12px;background:#f5f8f6;box-shadow:0 16px 25px #0b182028;position:relative}
+      .fraud-preview iframe{width:780px;height:550px;border:0;pointer-events:none;transform:scale(.47);transform-origin:top left;display:block}
+      .alta-preview{height:235px;margin:20px 0 26px;overflow:hidden;border-radius:12px;background:#f7f9fc;box-shadow:0 16px 25px #0b182028;position:relative}
+      .alta-preview iframe{width:1100px;height:670px;border:0;pointer-events:none;transform:scale(.35);transform-origin:top left;display:block}
+      .nps-preview{height:235px;margin:20px 0 26px;overflow:hidden;border-radius:12px;background:#f8f7fa;box-shadow:0 16px 25px #0b182028;position:relative}
+      .nps-preview iframe{width:1300px;height:780px;border:0;pointer-events:none;transform:scale(.30);transform-origin:top left;display:block}
+      .hero h1{font-size:clamp(46px,5.7vw,82px)}
+      .hero h1 em{font-family:var(--sans);font-style:normal;font-weight:500}
+      :root{--mono:'Segoe UI',Arial,sans-serif}
+    </style>
   </head>
   <body>
     <div class="cursor-glow" aria-hidden="true"></div>
@@ -58,35 +69,26 @@
         <div class="project-grid">
           <article class="project-card fraud">
             <div class="project-number">01</div>
-            <div class="dashboard fraud-dashboard" aria-hidden="true">
-              <div class="dash-top"><span>VISÃO EXECUTIVA</span><i></i><i></i></div>
-              <div class="metric-row"><div><small>VALOR EM RISCO</small><b>R$ 2,4 mi</b><em>↑ 18,4%</em></div><div><small>ALERTAS</small><b>1.284</b><em>↑ 9,2%</em></div></div>
-              <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <div class="dash-bottom"><div></div><div></div><div></div></div>
+            <div class="fraud-preview" aria-label="Prévia do painel de Fraude e Desperdício">
+              <iframe src="fraude-desperdicio.html#visao" title="Prévia do painel Fraude e Desperdício" tabindex="-1"></iframe>
             </div>
-            <div class="project-content"><p class="project-type">Risco &amp; Finanças</p><h3>Fraude &amp;<br />Desperdício</h3><p>Monitoramento de transações, desvios e possíveis perdas para apoiar a priorização de análises.</p><a href="#contato" aria-label="Conversar sobre o projeto Fraude e Desperdício">Ver estrutura do case <span>↗</span></a></div>
+            <div class="project-content"><p class="project-type">Risco &amp; Finanças</p><h3>Fraude &amp;<br />Desperdício</h3><p>Monitoramento de transações, desvios e possíveis perdas para apoiar a priorização de análises.</p><a href="fraude-desperdicio.html" aria-label="Abrir o case Fraude e Desperdício">Abrir painel <span>↗</span></a></div>
           </article>
 
           <article class="project-card infection">
             <div class="project-number">02</div>
-            <div class="dashboard infection-dashboard" aria-hidden="true">
-              <div class="dash-top"><span>INDICADORES ASSISTENCIAIS</span><i></i><i></i></div>
-              <div class="gauge"><div><b>1,8%</b><small>TAXA ATUAL</small></div></div>
-              <div class="line-chart"><svg viewBox="0 0 300 80" preserveAspectRatio="none"><path d="M0,58 C25,62 30,35 55,46 S85,60 108,37 S145,55 168,31 S205,40 220,24 S263,46 300,12" fill="none" stroke="currentColor" stroke-width="3" /></svg></div>
-              <div class="dash-labels"><span>JAN</span><span>FEV</span><span>MAR</span><span>ABR</span><span>MAI</span></div>
+            <div class="alta-preview" aria-label="Prévia do painel Termômetro de Alta Administrativa">
+              <iframe src="alta-administrativa.html" title="Prévia do painel Termômetro de Alta Administrativa" tabindex="-1"></iframe>
             </div>
-            <div class="project-content"><p class="project-type">Saúde &amp; Operações</p><h3>Taxa de Infecção<br />Hospitalar</h3><p>Acompanhamento de indicadores assistenciais por período, unidade e perfil de atendimento.</p><a href="#contato" aria-label="Conversar sobre o projeto Taxa de Infecção Hospitalar">Ver estrutura do case <span>↗</span></a></div>
+            <div class="project-content"><p class="project-type">Saúde &amp; Operações</p><h3>Termômetro de<br />Alta Administrativa</h3><p>Acompanhamento da evolução assistencial para apoiar altas e a transição segura ao cuidado domiciliar.</p><a href="alta-administrativa.html" aria-label="Abrir o case Termômetro de Alta Administrativa">Abrir painel <span>↗</span></a></div>
           </article>
 
           <article class="project-card nps">
             <div class="project-number">03</div>
-            <div class="dashboard nps-dashboard" aria-hidden="true">
-              <div class="dash-top"><span>EXPERIÊNCIA DO CLIENTE</span><i></i><i></i></div>
-              <div class="nps-score"><b>72</b><span>NPS</span><em>+12 pts</em></div>
-              <div class="nps-scale"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <div class="sentiment"><div><b>68%</b><span>Promotores</span></div><div><b>24%</b><span>Neutros</span></div><div><b>8%</b><span>Detratores</span></div></div>
+            <div class="nps-preview" aria-label="Prévia do painel Customer Experience NPS">
+              <iframe src="customer-experience-refinado.html" title="Prévia do painel Customer Experience NPS" tabindex="-1"></iframe>
             </div>
-            <div class="project-content"><p class="project-type">Cliente &amp; Estratégia</p><h3>Customer<br />Experience NPS</h3><p>Análise de satisfação, segmentos e fatores de experiência para direcionar melhorias.</p><a href="#contato" aria-label="Conversar sobre o projeto NPS">Ver estrutura do case <span>↗</span></a></div>
+            <div class="project-content"><p class="project-type">Cliente &amp; Estratégia</p><h3>Customer<br />Experience NPS</h3><p>Análise de satisfação, segmentos e fatores de experiência para direcionar melhorias.</p><a href="customer-experience-refinado.html" aria-label="Abrir o case Customer Experience NPS">Abrir painel <span>↗</span></a></div>
           </article>
         </div>
       </section>

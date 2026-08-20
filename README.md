@@ -1,8 +1,8 @@
 # Portfólio — Milton Zanca
 
-Portfólio profissional de **Milton Zanca**, Analista de Dados Sênior, com projetos de Power BI voltados a risco, saúde e experiência do cliente.
+Portfólio profissional de **Milton Zanca**, Analista de Dados Sênior, com cases interativos voltados a risco, saúde e experiência do cliente.
 
-Cada case será documentado com: contexto de negócio, objetivo, fontes e qualidade dos dados, KPIs, modelagem, dashboards, validação e principais conclusões. A estrutura prioriza rastreabilidade e utilização prática da análise.
+Cada case possui documentação de contexto de negócio, regras, dados sintéticos, KPIs, visuais, limitações e decisões apoiadas. Consulte o [índice de documentação](docs/README.md).
 
 ## Tecnologias
 
@@ -16,13 +16,11 @@ Abra o arquivo `index.html` no navegador. Para uma experiência mais próxima da
 
 ## Publicar no GitHub Pages
 
-1. Crie um repositório no GitHub, por exemplo `portfolio`.
-2. Envie os arquivos desta pasta para o repositório.
-3. No repositório, acesse **Settings → Pages**.
-4. Em **Build and deployment**, escolha **Deploy from a branch**.
-5. Selecione a branch `main`, a pasta `/ (root)` e clique em **Save**.
+1. No repositório, acesse **Settings → Pages**.
+2. Em **Build and deployment**, escolha **Deploy from a branch**.
+3. Selecione a branch `main`, a pasta `/ (root)` e clique em **Save**.
 
-Após alguns minutos, seu site ficará disponível em `https://miltonzanca.github.io/portfolio/`.
+Publicação deste projeto: `https://miltonzanca.github.io/portfolio-milton-zanca/`.
 
 ## Estrutura recomendada para cada case
 
@@ -33,9 +31,11 @@ Após alguns minutos, seu site ficará disponível em `https://miltonzanca.githu
 5. Dashboard e decisões que ele suporta.
 6. Validação, limitações e próximos passos.
 
-## Próximos ajustes
+## Cases documentados
 
-- Substituir as prévias visuais dos dashboards por capturas reais dos projetos.
-- Incluir links públicos ou vídeos de demonstração dos relatórios Power BI, quando disponíveis.
-- Atualizar descrições com resultados mensuráveis de cada case.
+- [Fraude & Desperdício](docs/fraude-desperdicio.md)
+- [Termômetro de Alta Administrativa](docs/termometro-alta-administrativa.md)
+- [Customer Experience NPS](docs/customer-experience-nps.md)
+
+> Todos os dados, pessoas, empresas e valores apresentados nos dashboards são sintéticos e utilizados exclusivamente para demonstração de raciocínio analítico, modelagem visual e apoio à decisão.
 

@@ -36,6 +36,7 @@ Publicação deste projeto: `https://miltonzanca.github.io/portfolio-milton-zanc
 - [Fraude & Desperdício](docs/fraude-desperdicio.md)
 - [Termômetro de Alta Administrativa](docs/termometro-alta-administrativa.md)
 - [Customer Experience NPS](docs/customer-experience-nps.md)
+- [Reembolsos sob risco](docs/reembolsos-sob-risco.md)
 
 > Todos os dados, pessoas, empresas e valores apresentados nos dashboards são sintéticos e utilizados exclusivamente para demonstração de raciocínio analítico, modelagem visual e apoio à decisão.
 

@@ -2,7 +2,7 @@
 
 Este diretório registra as premissas analíticas, regras de negócio, dados sintéticos e escolhas visuais dos painéis apresentados no portfólio.
 
-Os três cases são demonstrativos. Nomes de pessoas, empresas, prestadores, instituições, valores, comentários, ocorrências e indicadores foram criados para fins de estudo. Nenhuma conclusão representa uma organização real.
+Os quatro cases são demonstrativos. Nomes de pessoas, empresas, prestadores, instituições, valores, comentários, ocorrências e indicadores foram criados para fins de estudo. Nenhuma conclusão representa uma organização real.
 
 ## Estrutura de análise
 
@@ -19,6 +19,7 @@ Cada case segue a mesma sequência de trabalho:
 | Fraude & Desperdício | Priorização de eventos para auditoria | [fraude-desperdicio.md](fraude-desperdicio.md) |
 | Termômetro de Alta Administrativa | Acompanhamento da evolução e elegibilidade de alta | [termometro-alta-administrativa.md](termometro-alta-administrativa.md) |
 | Customer Experience NPS | Priorização de melhorias na jornada do acadêmico | [customer-experience-nps.md](customer-experience-nps.md) |
+| Reembolsos sob risco | Redução de perdas com preservação da experiência do cliente | [reembolsos-sob-risco.md](reembolsos-sob-risco.md) |
 
 ## Princípios de uso responsável
 

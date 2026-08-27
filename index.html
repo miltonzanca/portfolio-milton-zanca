@@ -8,15 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=20260820-2" />
+    <link rel="stylesheet" href="styles.css?v=20260827-3" />
     <style>
       .fraud-preview{height:235px;margin:20px 0 26px;overflow:hidden;border-radius:12px;background:#f5f8f6;box-shadow:0 16px 25px #0b182028;position:relative}
-      .fraud-preview iframe{width:780px;height:550px;border:0;pointer-events:none;transform:scale(.47);transform-origin:top left;display:block}
+      .fraud-preview iframe{width:780px;height:550px;border:0;pointer-events:none;transform:scale(.47);transform-origin:top left;display:block;position:absolute;top:0;left:0}
       .alta-preview{height:235px;margin:20px 0 26px;overflow:hidden;border-radius:12px;background:#f7f9fc;box-shadow:0 16px 25px #0b182028;position:relative}
-      .alta-preview iframe{width:1100px;height:670px;border:0;pointer-events:none;transform:scale(.35);transform-origin:top left;display:block}
+      .alta-preview iframe{width:1100px;height:670px;border:0;pointer-events:none;transform:scale(.35);transform-origin:top left;display:block;position:absolute;top:0;left:0}
       .nps-preview{height:235px;margin:20px 0 26px;overflow:hidden;border-radius:12px;background:#f8f7fa;box-shadow:0 16px 25px #0b182028;position:relative}
-      .nps-preview iframe{width:1300px;height:780px;border:0;pointer-events:none;transform:scale(.30);transform-origin:top left;display:block}
-      .hero h1{font-size:clamp(46px,5.7vw,82px)}
+      .nps-preview iframe{width:1300px;height:780px;border:0;pointer-events:none;transform:scale(.30);transform-origin:top left;display:block;position:absolute;top:0;left:0}
+      .refund-card{grid-column:1/-1;min-height:430px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:26px;align-items:stretch}
+      .refund-card .project-number{position:absolute;top:19px;left:19px}
+      .refund-preview{height:340px;margin:22px 0 0;overflow:hidden;border-radius:16px;background:#f7f4f4;box-shadow:0 16px 25px #0b182028;position:relative}
+      .refund-preview iframe{width:1420px;height:780px;border:0;pointer-events:none;transform:scale(.43);transform-origin:top left;display:block;position:absolute;top:0;left:0}
+      .refund-card .project-content{align-self:end;padding:24px 22px 18px 0}
+      .refund-card .project-content h3{font-size:38px}
+      @media(max-width:750px){.refund-card{display:flex;grid-column:auto;min-height:540px}.refund-preview{height:235px;margin-top:20px}.refund-card .project-content{padding:0}.refund-card .project-content h3{font-size:29px}}
+      .hero h1{font-size:35px;line-height:1.1;letter-spacing:-.04em}
       .hero h1 em{font-family:var(--sans);font-style:normal;font-weight:500}
       :root{--mono:'Segoe UI',Arial,sans-serif}
     </style>
@@ -27,7 +34,8 @@
       <a class="brand" href="#inicio" aria-label="Ir ao início">MZ<span>.</span></a>
       <nav aria-label="Navegação principal">
         <a href="#projetos">Projetos</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#sobre">Método</a>
         <a href="#contato">Contato</a>
       </nav>
       <a class="header-link" href="mailto:miltonszanca@gmail.com">Vamos conversar <span aria-hidden="true">↗</span></a>
@@ -36,9 +44,9 @@
     <main>
       <section class="hero" id="inicio">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span> Portfólio 2026</p>
-          <h1>Análise de dados<br />para decisões <em>confiáveis.</em></h1>
-          <p class="intro">Sou <strong>Milton Zanca</strong>, Analista de Dados Sênior. Estruturo dados, indicadores e dashboards para apoiar decisões com qualidade e contexto de negócio.</p>
+          <p class="eyebrow"><span></span> Dados, BI e automação</p>
+          <h1>Dados que sustentam<br />decisões de <em>negócio.</em></h1>
+          <p class="intro">Sou <strong>Milton Zanca</strong>, Analista de Dados Sênior com mais de 10 anos de experiência. Transformo dados operacionais em indicadores, análises e produtos analíticos para saúde, educação, finanças e operações.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
             <a class="text-link" href="https://www.linkedin.com/in/miltonzanca/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -51,13 +59,23 @@
           </div>
           <div class="data-orbit orbit-one" aria-hidden="true"><span>SQL</span><span>•</span><span>DAX</span><span>•</span></div>
           <div class="data-orbit orbit-two" aria-hidden="true">POWER BI</div>
-          <div class="availability"><i></i> Disponível para projetos</div>
+          <div class="availability"><i></i> CLT, PJ e projetos</div>
         </div>
       </section>
 
       <section class="proof" aria-label="Especialidades">
-        <p>Do problema de negócio à entrega validada</p>
-        <div class="proof-items"><span>POWER BI</span><span>MODELAGEM</span><span>KPIs</span><span>QUALIDADE DE DADOS</span></div>
+        <p>Do problema de negócio à decisão acompanhada</p>
+        <div class="proof-items"><span>POWER BI &amp; DAX</span><span>SQL &amp; PYTHON</span><span>MODELAGEM</span><span>QUALIDADE DE DADOS</span></div>
+      </section>
+
+      <section class="expertise" id="especialidades">
+        <div class="expertise-intro"><p class="eyebrow"><span></span> Especialidades</p><h2>Capacidade técnica<br />com foco em <em>aplicação.</em></h2><p>Atuação entre a necessidade da área, a estruturação do dado e a entrega que será utilizada pela operação e liderança.</p></div>
+        <div class="expertise-grid">
+          <article><span>01</span><h3>Analytics &amp; BI</h3><p>Power BI, DAX, modelagem dimensional, definição de KPIs e dashboards para acompanhamento gerencial.</p></article>
+          <article><span>02</span><h3>Dados &amp; Automação</h3><p>SQL, Python, SSMS, Databricks, VBA e Macros para tratamento, integração e ganho de eficiência operacional.</p></article>
+          <article><span>03</span><h3>Domínios de negócio</h3><p>Saúde, educação, finanças, jurídico e operações: custos, risco, fraude, jornada, NPS e indicadores assistenciais.</p></article>
+          <article><span>04</span><h3>Entrega responsável</h3><p>Documentação técnica, validação com áreas envolvidas, critérios de uso e evolução contínua das soluções.</p></article>
+        </div>
       </section>
 
       <section class="projects" id="projetos">
@@ -69,50 +87,52 @@
         <div class="project-grid">
           <article class="project-card fraud">
             <div class="project-number">01</div>
-            <div class="fraud-preview" aria-label="Prévia do painel de Fraude e Desperdício">
+            <div class="fraud-preview" data-dashboard-preview data-source-width="780" data-max-scale="0.47" aria-label="Prévia do painel de Fraude e Desperdício">
               <iframe src="fraude-desperdicio.html#visao" title="Prévia do painel Fraude e Desperdício" tabindex="-1"></iframe>
             </div>
-            <div class="project-content"><p class="project-type">Risco &amp; Finanças</p><h3>Fraude &amp;<br />Desperdício</h3><p>Monitoramento de transações, desvios e possíveis perdas para apoiar a priorização de análises.</p><a href="fraude-desperdicio.html" aria-label="Abrir o case Fraude e Desperdício">Abrir painel <span>↗</span></a></div>
+            <div class="project-content"><p class="project-type">Risco &amp; Finanças</p><h3>Fraude &amp;<br />Desperdício</h3><p>Priorização de alertas, desvios e exposição financeira para apoiar investigação, controles e redução de perdas.</p><a href="fraude-desperdicio.html" aria-label="Abrir o case Fraude e Desperdício">Abrir painel <span>↗</span></a></div>
           </article>
 
           <article class="project-card infection">
             <div class="project-number">02</div>
-            <div class="alta-preview" aria-label="Prévia do painel Termômetro de Alta Administrativa">
+            <div class="alta-preview" data-dashboard-preview data-source-width="1100" data-max-scale="0.35" aria-label="Prévia do painel Termômetro de Alta Administrativa">
               <iframe src="alta-administrativa.html" title="Prévia do painel Termômetro de Alta Administrativa" tabindex="-1"></iframe>
             </div>
-            <div class="project-content"><p class="project-type">Saúde &amp; Operações</p><h3>Termômetro de<br />Alta Administrativa</h3><p>Acompanhamento da evolução assistencial para apoiar altas e a transição segura ao cuidado domiciliar.</p><a href="alta-administrativa.html" aria-label="Abrir o case Termômetro de Alta Administrativa">Abrir painel <span>↗</span></a></div>
+            <div class="project-content"><p class="project-type">Saúde &amp; Operações</p><h3>Termômetro de<br />Alta Administrativa</h3><p>Leitura da evolução assistencial e do plano multidisciplinar para apoiar altas seguras e a transição ao cuidado domiciliar.</p><a href="alta-administrativa.html" aria-label="Abrir o case Termômetro de Alta Administrativa">Abrir painel <span>↗</span></a></div>
           </article>
 
           <article class="project-card nps">
             <div class="project-number">03</div>
-            <div class="nps-preview" aria-label="Prévia do painel Customer Experience NPS">
+            <div class="nps-preview" data-dashboard-preview data-source-width="1300" data-max-scale="0.30" aria-label="Prévia do painel Customer Experience NPS">
               <iframe src="customer-experience-refinado.html" title="Prévia do painel Customer Experience NPS" tabindex="-1"></iframe>
             </div>
-            <div class="project-content"><p class="project-type">Cliente &amp; Estratégia</p><h3>Customer<br />Experience NPS</h3><p>Análise de satisfação, segmentos e fatores de experiência para direcionar melhorias.</p><a href="customer-experience-refinado.html" aria-label="Abrir o case Customer Experience NPS">Abrir painel <span>↗</span></a></div>
+            <div class="project-content"><p class="project-type">Cliente &amp; Estratégia</p><h3>Customer<br />Experience NPS</h3><p>Diagnóstico da voz do acadêmico, dos temas críticos e das intervenções que podem elevar a experiência.</p><a href="customer-experience-refinado.html" aria-label="Abrir o case Customer Experience NPS">Abrir painel <span>↗</span></a></div>
+          </article>
+
+          <article class="project-card refund-card" id="case-reembolsos">
+            <div class="project-number">04 · CASE EM DESTAQUE</div>
+            <div class="refund-preview" data-dashboard-preview data-source-width="1420" data-max-scale="0.43" aria-label="Prévia do case Reembolsos sob risco">
+              <iframe src="reembolsos-marketplace.html" title="Prévia do case Reembolsos sob risco" tabindex="-1"></iframe>
+            </div>
+            <div class="project-content"><p class="project-type">Risco, CX &amp; Finanças</p><h3>Reembolsos<br />sob risco</h3><p>Do diagnóstico do problema às hipóteses, regras, cenários e política de decisão para reduzir perdas sem penalizar clientes legítimos.</p><a href="case-reembolsos.html" aria-label="Abrir o estudo Reembolsos sob risco">Ver estudo completo <span>↗</span></a></div>
           </article>
         </div>
       </section>
 
       <section class="about" id="sobre">
-        <div><p class="eyebrow"><span></span> Método de trabalho</p><h2>Análise estruturada<br />do <em>início</em> ao fim.</h2></div>
-        <div class="approach"><p>Um dashboard é a etapa final de um processo. O trabalho parte da necessidade do negócio, passa pela preparação e validação dos dados, e termina com uma entrega acompanhada de critérios claros de uso.</p><ol><li><b>01</b><span><strong>Entendimento do negócio</strong>Definição do problema, público, decisões suportadas e escopo da análise.</span></li><li><b>02</b><span><strong>Entendimento e qualidade dos dados</strong>Levantamento das fontes, avaliação de completude, consistência e regras necessárias.</span></li><li><b>03</b><span><strong>KPIs e modelagem</strong>Definição de métricas, granularidade e modelo de dados adequado à consulta analítica.</span></li><li><b>04</b><span><strong>Dashboard e validação</strong>Construção da visualização, conferência dos resultados e validação com as partes envolvidas.</span></li><li><b>05</b><span><strong>Entrega e evolução</strong>Documentação, orientação de uso e ajustes a partir de feedback e novas necessidades.</span></li></ol></div>
+        <div><p class="eyebrow"><span></span> Método de trabalho</p><h2>Análise estruturada<br />do <em>contexto</em> à ação.</h2></div>
+        <div class="approach"><p>Atuação com liderança e áreas de negócio na definição de problemas, regras, dados e indicadores. O dashboard é a entrega visível de um processo que precisa ser confiável, compreensível e útil na rotina.</p><ol><li><b>01</b><span><strong>Contexto e decisão</strong>Definição do problema, público, decisão suportada, escopo e critérios de sucesso.</span></li><li><b>02</b><span><strong>Dados e qualidade</strong>Levantamento das fontes, tratamento, avaliação de completude, consistência e regras de negócio.</span></li><li><b>03</b><span><strong>Modelagem e métricas</strong>Definição de granularidade, modelo de dados, medidas e critérios de cálculo dos KPIs.</span></li><li><b>04</b><span><strong>Visual e validação</strong>Construção da experiência analítica, conferência de resultados e validação com as partes envolvidas.</span></li><li><b>05</b><span><strong>Adoção e evolução</strong>Documentação, orientação de uso, acompanhamento e melhoria contínua da solução.</span></li></ol></div>
       </section>
 
       <section class="contact" id="contato">
         <p class="eyebrow"><span></span> Contato</p>
         <h2>Vamos conversar<br />sobre seu <em>desafio.</em></h2>
-        <p>Disponível para oportunidades CLT, contratos PJ e projetos freelance em análise de dados e Power BI.</p>
+        <p>Disponível para oportunidades CLT, contratos PJ e projetos freelance em Analytics, BI, automação e produtos de dados.</p>
         <a class="button button-light" href="mailto:miltonszanca@gmail.com">miltonszanca@gmail.com <span aria-hidden="true">↗</span></a>
       </section>
     </main>
     <footer><a class="brand" href="#inicio">MZ<span>.</span></a><p>© <span id="year"></span> Milton Zanca. Todos os direitos reservados.</p><div><a href="https://github.com/miltonzanca" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/miltonzanca/" target="_blank" rel="noopener">LinkedIn ↗</a></div></footer>
-    <script>
-      if (!window.location.hash) {
-        if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-        window.addEventListener('pageshow', () => window.scrollTo(0, 0));
-      }
-    </script>
-    <script src="script.js"></script>
+    <script src="script.js?v=20260827-2"></script>
   </body>
 </html>
 

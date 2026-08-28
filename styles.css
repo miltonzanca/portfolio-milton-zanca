@@ -52,7 +52,8 @@
   min-height:415px;
   align-self:center;
 }
-.hero-facts{margin-top:-23px}
+.hero-facts{margin-top:46px}
+.hero-visual{transform:translateY(35px)}
 .method-card{
   align-self:stretch;
   padding:18px 20px;
@@ -74,7 +75,7 @@
 .method-card li span{display:block;margin-bottom:5px}
 .method-card blockquote{margin:12px 0 0;font-size:9px}
 @media(max-width:1050px){
-  .hero-visual{display:flex;grid-template-columns:none}
+  .hero-visual{display:flex;grid-template-columns:none;transform:none}
   .profile-frame{width:300px;height:360px;min-height:360px}
   .method-card{display:block}
 }

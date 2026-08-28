@@ -1,9 +1,32 @@
+// A página principal sempre começa no topo. Links com âncora continuam funcionando.
+if ('scrollRestoration' in window.history) {
+  window.history.scrollRestoration = 'manual';
+}
+
+function resetInitialScroll() {
+  if (window.location.hash) return;
+
+  const previousBehavior = document.documentElement.style.scrollBehavior;
+  document.documentElement.style.scrollBehavior = 'auto';
+  window.scrollTo(0, 0);
+
+  window.setTimeout(() => {
+    window.scrollTo(0, 0);
+    document.documentElement.style.scrollBehavior = previousBehavior;
+  }, 0);
+}
+
+window.addEventListener('DOMContentLoaded', resetInitialScroll);
+window.addEventListener('pageshow', resetInitialScroll);
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const glow = document.querySelector('.cursor-glow');
-window.addEventListener('pointermove', (event) => {
-  glow.style.transform = `translate(${event.clientX - 180}px, ${event.clientY - 180}px)`;
-});
+if (glow) {
+  window.addEventListener('pointermove', (event) => {
+    glow.style.transform = `translate(${event.clientX - 180}px, ${event.clientY - 180}px)`;
+  });
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

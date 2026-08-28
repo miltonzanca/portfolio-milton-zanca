@@ -39,4 +39,3 @@ Organizar eventos de utilização de saúde para triagem de auditoria e prioriza
 ## Limitações e validação
 
 Em ambiente real, as regras exigem conferência com cadastro, guias, prontuário, autorização, histórico de utilização e política assistencial. A classificação de risco deve ser revisada por auditoria especializada.
-

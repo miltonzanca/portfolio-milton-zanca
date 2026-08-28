@@ -1,5 +1,15 @@
+# Arquivos temporários de geração e validação local
+tmp/
+__pycache__/
+*.pyc
+*.inspect.ndjson
+outputs/**/qa/
+outputs/**/preview-*.png
+output/pdf/Curriculo_Milton_Zanca.pdf
+output/linkedin/
+customer-experience-nps.html
+
+# Arquivos do sistema e editores
 .DS_Store
 Thumbs.db
-*.tmp
-*.log
-
+.vscode/

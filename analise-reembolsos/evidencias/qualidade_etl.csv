@@ -1,0 +1,7 @@
+﻿regra,antes,depois,tratamento
+pedido_id duplicado,120,0,manter primeiro registro
+contestacao_id duplicada,20,0,manter primeiro registro
+datas em formato DD/MM/AAAA,805,0,padronizar para ISO
+valores monetários com vírgula ou R$,1065,0,converter para número decimal
+relato vazio,12,0,marcar ausência sem inventar conteúdo
+contestação sem pedido correspondente,0,0,bloquear carga se maior que zero

@@ -1,0 +1,44 @@
+ETL - REEMBOLSOS SOB RISCO
+entrada pedidos: 60,120 linhas
+entrada contestações: 4,820 linhas
+
+AMOSTRA ANTES DO TRATAMENTO
+contestacao_id data_pedido           motivo status_resposta_loja valor_reembolso
+      CON00001  15/01/2025 PRODUTO AVARIADO         SEM RESPOSTA          139.24
+      CON00002  2025-01-17     nao_entregue           respondida           56.72
+      CON00003  2025-01-15    item_faltante           respondida           20.42
+      CON00004  2025-01-15 produto_avariado         sem resposta           93.76
+      CON00005  2025-01-05        qualidade           respondida           55,25
+      CON00006  2025-01-04    item_faltante           respondida           20.58
+
+CONTROLES DO ETL
+                                regra  antes  depois                            tratamento
+                  pedido_id duplicado    120       0              manter primeiro registro
+             contestacao_id duplicada     20       0              manter primeiro registro
+          datas em formato DD/MM/AAAA    805       0                   padronizar para ISO
+ valores monetários com vírgula ou R$   1065       0         converter para número decimal
+                         relato vazio     12       0 marcar ausência sem inventar conteúdo
+contestação sem pedido correspondente      0       0      bloquear carga se maior que zero
+
+AMOSTRA DEPOIS DO TRATAMENTO
+contestacao_id     mes           motivo  percentual_itens_contestados  sem_resposta_loja  score_regra   faixa_risco  valor_reembolso
+      CON00007 2025-01 pedido_incorreto                      1.000000                  1           33          alto            90.72
+      CON00020 2025-01        qualidade                      1.000000                  0           25 intermediario            49.06
+      CON00039 2025-01 produto_avariado                      1.000000                  1           41          alto             0.00
+      CON00055 2025-01 pedido_incorreto                      0.571429                  1           16 intermediario            73.69
+      CON00062 2025-01 pedido_incorreto                      0.400000                  1           30 intermediario            24.79
+      CON00069 2025-01 pedido_incorreto                      0.333333                  0            0         baixo             0.00
+      CON00097 2025-01    item_faltante                      0.666667                  0            0         baixo             0.00
+      CON00181 2025-01 pedido_incorreto                      1.000000                  1           33          alto            78.28
+
+RECONCILIAÇÃO
+pedidos únicos: 60,000
+contestações únicas: 4,800
+valor reembolsado: R$ 328,600.00
+exposição sintética auditada: R$ 74,600.00
+lojas sem resposta: 1,950
+faixas de risco:
+faixa_risco
+baixo            2640
+intermediario    1410
+alto              750

@@ -1,0 +1,12 @@
+﻿campo,definicao
+contestacao_id,Identificador sintético da contestação
+pedido_id,Identificador sintético do pedido
+cliente_hash,Identificador anonimizado do cliente
+motivo,Tema padronizado da reclamação
+percentual_itens_contestados,Itens contestados dividido pelos itens do pedido
+contestacoes_60d,Quantidade de contestações do cliente na janela de 60 dias
+sem_resposta_loja,Indicador de ausência de resposta da loja no prazo
+score_regra,Pontuação de triagem baseada em sinais observáveis
+faixa_risco,"Faixa relativa de priorização: baixo, intermediário ou alto"
+exposicao_confirmada,Rótulo sintético de auditoria usado apenas para validar o método
+exposicao_potencial,Valor reembolsado quando o rótulo sintético de auditoria é positivo

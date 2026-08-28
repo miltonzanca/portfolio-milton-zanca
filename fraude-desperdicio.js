@@ -33,4 +33,3 @@
   [els.month,els.risk,els.type].forEach(element=>element.addEventListener('change',render));document.querySelector('#clearFilters').addEventListener('click',()=>{els.month.value='all';els.risk.value='all';els.type.value='all';render()});render();
 })();
 if(window.self!==window.top){document.documentElement.classList.add('dv-embed');}
-

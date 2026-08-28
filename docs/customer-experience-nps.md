@@ -54,4 +54,3 @@ Transformar respostas de NPS em prioridades de melhoria na jornada do acadêmico
 2. Padronizar categorias de motivo e responsáveis por ação.
 3. Comparar NPS antes e depois das intervenções com recortes de campus, curso e período.
 4. Medir prazo de resolução, reincidência e impacto em satisfação.
-

@@ -1,0 +1,4 @@
+﻿contestacao_id,motivo,relato_cliente,faixa_risco,score_regra,exposicao_confirmada
+CON04340,qualidade,A comida chegou fria e com qualidade abaixo do esperado.,alto,91,1
+CON00361,produto_avariado,O item vazou durante a entrega e não dava para consumir.,intermediario,30,1
+CON02069,item_faltante,"O pedido chegou incompleto, faltou parte da compra.",baixo,-8,0

@@ -19,11 +19,10 @@ Cada case segue a mesma sequência de trabalho:
 | Fraude & Desperdício | Priorização de eventos para auditoria | [fraude-desperdicio.md](fraude-desperdicio.md) |
 | Termômetro de Alta Administrativa | Acompanhamento da evolução e elegibilidade de alta | [termometro-alta-administrativa.md](termometro-alta-administrativa.md) |
 | Customer Experience NPS | Priorização de melhorias na jornada do acadêmico | [customer-experience-nps.md](customer-experience-nps.md) |
-| Reembolsos sob risco | Redução de perdas com preservação da experiência do cliente | [reembolsos-sob-risco.md](reembolsos-sob-risco.md) |
+| Reembolsos sob risco | Redução de perdas com preservação da experiência do cliente | [Documento](reembolsos-sob-risco.md) · [Evidências executáveis](../analise-reembolsos.html) |
 
 ## Princípios de uso responsável
 
 - Indicadores de risco e de experiência apontam sinais, não comprovam fraude, falha operacional ou causalidade.
 - Decisões clínicas, de alta e de tratamento dependem da avaliação dos responsáveis técnicos.
 - Métricas de NPS e menções servem para levantar hipóteses; recomenda-se validar resultados com a operação e com dados completos antes de agir.
-

@@ -45,4 +45,3 @@ O painel simula uma pontuação consolidada de 0 a 16, formada pelos três crit�
 ## Limitações e validação
 
 As escalas, score e limites demonstrados são didáticos. Em uso real, devem ser homologados pelas áreas assistenciais, protocolos clínicos, auditoria e governança da instituição.
-

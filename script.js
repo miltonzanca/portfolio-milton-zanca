@@ -42,4 +42,3 @@ if ('ResizeObserver' in window) {
 } else {
   window.addEventListener('resize', fitDashboardPreviews);
 }
-
